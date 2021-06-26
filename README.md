@@ -127,7 +127,7 @@ python main_search.py --site organ --db_index_path DATABASES/organ/index_tree/ve
 ```
 and
 ```
-python eval.pt --site organ --result_path QUERY_RESULTS/organ/results.pkl
+python eval.py --site organ --result_path QUERY_RESULTS/organ/results.pkl
 ```
 
 To reproduce the patch retrieval results, download the kathier100k data from our link. The link contain the same data as in NCT-CRC-HE-100K-NONORM in the [orignal release](https://zenodo.org/record/1214456#.YNaUZH1ue3I). We re-organized the directory and create a meta data for each patch to facilitate our experiment. After download the data. Extract them into the folder `DATA_PATCH`.  Then
