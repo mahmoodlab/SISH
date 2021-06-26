@@ -66,7 +66,7 @@ DATA/
 ├── PATCHES
 └── WSI
 ```
-### Step 4 FISH database construction
+#### Step 4 FISH database construction
 To buid the database for each anatomic site, run `build_index.py` as below
 ```
 python build_index.py --site SITE
@@ -96,7 +96,7 @@ DATA/LATENT/
 │   │   │       └── slide_2.h5
 
 ```
-### Step 5 Search the whole database
+#### Step 5 Search the whole database
 Run the script below to get each query's results in the database.
 ```
 python main_search.py --site SITE --db_index_path ./DATABASES/SITE/index_tree/veb.pkl --index_meta_path ./DATABASES/SITE/index_meta/meta.pkl
@@ -111,7 +111,7 @@ QUERY_SPEED/
 ├── SITE
 │   └── speed_log.txt
 ```
-### Step 6 Evaluation
+#### Step 6 Evaluation
 Run the `eval.py` to get the performance results which will direclty print on the screen when finish.
 ```bash
 python eval.py --site SITE --result_path QUERY_RESULTS/SITE/results.pkl
