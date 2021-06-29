@@ -2,13 +2,13 @@ FISH
 ===========
 Fast and Scalable Image Search for Histology
 
-***TL;DR:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus leo vitae tincidunt auctor. Duis volutpat eget ligula in placerat. Proin pellentesque dignissim nunc id mattis. Etiam vel feugiat tellus, at sodales mauris. Nulla mollis, augue at maximus vehicula, risus nulla elementum nibh, id sodales odio ligula a diam*
+***TL;DR:** *
 
 ## Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
 * NVIDIA GPU (NVIDIA GeForce 2080 Ti) 
 * Python (3.7.0), OpenCV (3.4.0), Openslide (1.1.1) and Pytorch (1.5.0)
-For more details, please refer to the installtion guide.
+For more details, please refer to the [installtion guide (docs/INSTALLATION.md).
 
 ## Usage
 The steps below show how to build FISH pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
