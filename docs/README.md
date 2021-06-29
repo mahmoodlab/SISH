@@ -2,7 +2,7 @@ FISH
 ===========
 Fast and Scalable Image Search for Histology
 
-***TL;DR:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus leo vitae tincidunt auctor. Duis volutpat eget ligula in placerat. Proin pellentesque dignissim nunc id mattis. Etiam vel feugiat tellus, at sodales mauris. Nulla mollis, augue at maximus vehicula, risus nulla elementum nibh, id sodales odio ligula a diam*
+***TL;DR:** FISH is a histology image search pipeline that does not required manual pixel-level label to prepare whole slide images. It achieves O(1) search speed and is adaptable to multiple cohorts. It can also be used for patch retrieval task*
 
 ## Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
