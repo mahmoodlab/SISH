@@ -147,3 +147,5 @@ Evalution
 ```
 python eval_patch.py --results QUERY_RESULTS/PATCH/kather100k/results.pkl
 ```
+
+Note that the speed could be different from the paper if your CPU performance is not equivalent to ours (AMD368 Ryzen Threadripper 3970X 32-Core Processor)
