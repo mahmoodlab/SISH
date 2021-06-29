@@ -5,7 +5,7 @@ https://www.anaconda.com/distribution/
 
 After setting up anaconda, first install openslide:
 ```shell
-sudo apt-get install openslide-tools
+sudo pip3 install setuptools==45
 ```
 
 Next, use the environment configuration file located in **docs/fish.yaml** to create a conda environment:
