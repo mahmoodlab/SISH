@@ -12,9 +12,10 @@ For more details, please refer to the installtion guide.
 
 ## Usage
 The steps below show how to build FISH pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
+Before you start, please download our pretrained VQ-VAE and trash/tissue classifer from the [link](https://drive.google.com/drive/folders/1OIUzTkkVpaBY2XBWlbQEVu3DF0mdaDw-?usp=sharing) and put them into `checkpoints` folder.
 ### Preprocessing
 #### Step 1: Slide preparation
-First download whole slide images in the `DATA` folder and organize them into the following structure. Note that we ignore slides without specific resolution. 
+First prepare whole slide images in the `DATA` folder and organize them into the following structure. Note that we ignore slides without specific resolution. 
 ```bash
 DATA
 └── WSI
