@@ -230,7 +230,7 @@ if __name__ == "__main__":
         patch_name = patch_label_file.loc[idx, 'Patch Names']
         label = patch_label_file.loc[idx, 'label']
         patch = openslide.open_slide(os.path.join(args.patch_data_path, patch_name))
-        if args.exp_name == 'kathier100k':
+        if args.exp_name == 'kather100k':
             patch_rescaled = patch.read_region((0, 0), 0, (224, 224)).convert('RGB').resize((1024, 1024))
         else:
             # Implementation of customized method that fit your data to
