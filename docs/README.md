@@ -139,7 +139,7 @@ python build_index_patch.py --exp_name kather100k --patch_label_file ./DATA_PATC
 
 Search:
 ```
-python main_search_patch.py --exp_name kather100k --patch_label_file ./DATA_PATCH/summary.csv --patch_data_path ./DATA_PATCH/All --db_index_path DATABASES_PATCH/kather100k/index_tree/veb.pkl --index_meta_path DATABASES_PATCH/kather100k/index_meta/meta.pkl
+python main_search_patch.py --exp_name kather100k --patch_label_file ./DATA_PATCH/kather100k/summary.csv --patch_data_path ./DATA_PATCH/kather100k/All --db_index_path DATABASES_PATCH/kather100k/index_tree/veb.pkl --index_meta_path DATABASES_PATCH/kather100k/index_meta/meta.pkl
 ```
 
 Evalution
