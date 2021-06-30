@@ -5,7 +5,7 @@ https://www.anaconda.com/distribution/
 
 After setting up anaconda, first downgrade/upgrade the setuptools to avoid confliction
 ```shell
-sudo pip3 install setuptools==45
+sudo apt-get install openslide-tools
 ```
 
 Next, use the environment configuration file located in **docs/fish.yaml** to create a conda environment:
@@ -13,9 +13,10 @@ Next, use the environment configuration file located in **docs/fish.yaml** to cr
 conda env create -n fish -f docs/fish.yaml
 ```
 
-Activate the environment:
+Activate the environment and install openslide-python:
 ```shell
 conda activate fish
+pip install openslide-python==1.1.1
 ```
 
 Clone and switch to our repo:

@@ -172,7 +172,6 @@ dependencies:
     - numba==0.50.1
     - oauthlib==3.1.0
     - opencv-python==4.3.0.38
-    - openslide-python==1.1.1
     - protobuf==3.12.4
     - psutil==5.7.2
     - pyasn1==0.4.8
