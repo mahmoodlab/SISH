@@ -14,7 +14,7 @@ For more details, please refer to the [installtion guide](INSTALLATION.md).
 The steps below show how to build FISH pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
 ### Preprocessing
 #### Step 1: Slide preparation
-First download whole slide images in the `DATA` folder and organize them into the following structure. Note that we ignore slides without specific resolution. 
+Make the `./DATA` folder, download whole slide images there, and then organize them into the following structure. Note that we ignore slides without specific resolution. 
 ```bash
 DATA
 └── WSI
@@ -28,7 +28,7 @@ DATA
 #### Step 2: Segmentation and Patching
 We use the [CLAM toolbox](https://github.com/mahmoodlab/CLAM/blob/master/docs/README.md) to segment and patch whole slide images. Simply run:
 ```
-python create_patches_fp.py --source /data/SITE/DIAGNOSIS/RESOLUTION/ --step_size STEP_SIZE --patch_size PATCH_SIZE --seg --patch --save_dir DATA/PATCHES/SITE/DIAGNOSIS/RESOLUTION
+python create_patches_fp.py --source ./DATA/SITE/DIAGNOSIS/RESOLUTION/ --step_size STEP_SIZE --patch_size PATCH_SIZE --seg --patch --save_dir ./DATA/PATCHES/SITE/DIAGNOSIS/RESOLUTION
 ```
 We set `PATCH_SIZE` and `STEP_SIZE` to 1024 for 20x slide and to 2048 for 40x slide. After segmentation and patching, the `DATA` directory will look like the following
 ```bash
