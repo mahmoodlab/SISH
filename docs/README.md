@@ -144,6 +144,6 @@ python main_search_patch.py --exp_name kather100k --patch_label_file ./DATA_PATC
 
 Evalution
 ```
-python eval_patch.py --results QUERY_RESULTS/PATCH/kather100k/results.pkl
+python eval_patch.py --result_path QUERY_RESULTS/PATCH/kather100k/results.pkl
 ```
 Note that the speed results could be different from paper if your CPU is not equivalent to ours (AMD368Ryzen Threadripper 3970X  32-Core Processor).
