@@ -1,6 +1,6 @@
 FISH Installation Guide 
 ===========
-For instructions on installing anaconda on your machine (download the distribution that comes with python 3):
+Follow the instructions to install anaconda on your machine (download the distribution that comes with python 3):
 https://www.anaconda.com/distribution/
 
 After setting up anaconda, first downgrade/upgrade the setuptools to avoid confliction
