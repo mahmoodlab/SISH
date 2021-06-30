@@ -17,3 +17,9 @@ Activate the environment:
 ```shell
 conda activate fish
 ```
+
+Clone and switch to our repo:
+```shell
+git clone https://github.com/mahmoodlab/FISH.git
+cd ./FISH
+```
