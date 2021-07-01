@@ -117,6 +117,39 @@ Run the `eval.py` to get the performance results which will direclty print on th
 python eval.py --site SITE --result_path QUERY_RESULTS/SITE/results.pkl
 ```
 
+### Optional: FISH for patch retrieval
+If you would like to use FISH for patch retrieval task, please organize your data into the structure below
+```bash
+./DATA_PATCH/
+├── All
+├── summary.csv
+```
+where all patches files are in the folder `All` and the summary.csv file stores patch name and label in the format below
+```bash
+patch1,y1
+patch2,y2
+patch3,y3
+...
+```
+Once prepared, run the following:
+
+Build database:
+```
+python build_index_patch.py --exp_name EXP_NAME --patch_label_file ./DATA_PATCH/summary.csv --patch_data_path ./DATA_PATCH/All
+```
+where the `EXP_NAME` is a customized name of this database. You can reproduce our kather100k results by setting `EXP_NAME=kather100k`. One thing to note is that you should implement your method start from line 236 to scale your patch to 1024x1024 if you use your own patch data
+
+
+Search
+```
+python main_search_patch.py --exp_name EXP_NAME --patch_label_file ./DATA_PATCH/summary.csv --patch_data_path ./DATA_PATCH/All --db_index_path DATABASES_PATCH/EXP_NAME/index_tree/veb.pkl --index_meta_path DATABASES_PATCH/EXP_NAME/index_meta/meta.pkl
+```
+
+Evaluation
+```
+python eval_patch.py --result_path QUERY_RESULTS/PATCH/EXP_NAME/results.pkl
+```
+
 ## Reproducibility
 To reproduce the results in our paper, please download the checkpoints, preprocessed latent code and pre-build databases from the [link](https://drive.google.com/drive/folders/1OIUzTkkVpaBY2XBWlbQEVu3DF0mdaDw-?usp=sharing). The preprocess latent codes and pre-build databases are results directly from **Step 1-4** if you start everything from scratch. Once downloaded, unzip the DATABASES.zip and LATENT.ZIP  under `./FISH/DATA/` and `./FISH/` respectively.
 The folder structures should like the ones in **Step 4**. Run the command in **Step 5** and **Step 6** to reproduce the results in each site. 
@@ -130,20 +163,4 @@ and
 python eval.py --site organ --result_path QUERY_RESULTS/organ/results.pkl
 ```
 
-To reproduce the patch retrieval results, download the kathier100k data from our link. The link contain the same data as in NCT-CRC-HE-100K-NONORM in the [orignal release](https://zenodo.org/record/1214456#.YNaUZH1ue3I). We re-organized the directory and create a meta data for each patch to facilitate our experiment. After download the data. Extract them into the folder `DATA_PATCH`.  Then
-
-Build the database:
-```
-python build_index_patch.py --exp_name kather100k --patch_label_file ./DATA_PATCH/kather100k/summary.csv --patch_data_path ./DATA_PATCH/kather100k/All
-```
-
-Search:
-```
-python main_search_patch.py --exp_name kather100k --patch_label_file ./DATA_PATCH/kather100k/summary.csv --patch_data_path ./DATA_PATCH/kather100k/All --db_index_path DATABASES_PATCH/kather100k/index_tree/veb.pkl --index_meta_path DATABASES_PATCH/kather100k/index_meta/meta.pkl
-```
-
-Evalution
-```
-python eval_patch.py --result_path QUERY_RESULTS/PATCH/kather100k/results.pkl
-```
 Note that the speed results could be different from paper if your CPU is not equivalent to ours (AMD368Ryzen Threadripper 3970X  32-Core Processor).
