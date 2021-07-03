@@ -140,15 +140,15 @@ Build database:
 ```
 python build_index_patch.py --exp_name EXP_NAME --patch_label_file ./DATA_PATCH/summary.csv --patch_data_path ./DATA_PATCH/All
 ```
-where the `EXP_NAME` is a customized name of this database. You can reproduce our kather100k results by setting `EXP_NAME=kather100k`. One thing to note is that you should implement your method start from line 236 to scale your patch to 1024x1024 if you use your own patch data
+where the `EXP_NAME` is a customized name of this database. You can reproduce our kather100k results by setting `EXP_NAME=kather100k`. One thing to note is that you should implement your method start from line 236 to scale your patch to 1024x1024 if you use your own patch data.
 
 
-Search
+Search:
 ```
 python main_search_patch.py --exp_name EXP_NAME --patch_label_file ./DATA_PATCH/summary.csv --patch_data_path ./DATA_PATCH/All --db_index_path DATABASES_PATCH/EXP_NAME/index_tree/veb.pkl --index_meta_path DATABASES_PATCH/EXP_NAME/index_meta/meta.pkl
 ```
 
-Evaluation
+Evaluation:
 ```
 python eval_patch.py --result_path QUERY_RESULTS/PATCH/EXP_NAME/results.pkl
 ```
