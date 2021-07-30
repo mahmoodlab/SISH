@@ -2,6 +2,8 @@ FISH
 ===========
 Fast and Scalable Image Search for Histology
 
+[[arXiv]](https://arxiv.org/abs/2107.13587)
+
 ***TL;DR:** FISH is a histology whole slide image search pipeline that scales with O(1) and maintains constant search speed regardless of the size of the database. FISH uses self-supervised deep learning to encode meaningful representations from WSIs and a Van Emde Boas tree for fast search, followed by an uncertainty-based ranking algorithm to retrieve similar WSIs. We evaluated FISH on multiple tasks and datasets with over 22,000 patient cases spanning 56 disease subtypes. We additionally demonstrate that FISH can be used to assist with the diagnosis of rare cancer types where sufficient cases may not be available to train traditional deep models.*
 <p align="center">
     <img src="../assets/FISH_github_front_long.gif" alt="Teaser" width="600">
