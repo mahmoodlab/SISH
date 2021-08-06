@@ -156,7 +156,7 @@ python eval_patch.py --result_path QUERY_RESULTS/PATCH/EXP_NAME/results.pkl
 ```
 
 ## Reproducibility
-To reproduce the results in our paper, please download the checkpoints, preprocessed latent code and pre-build databases from the [link](https://drive.google.com/drive/folders/1OIUzTkkVpaBY2XBWlbQEVu3DF0mdaDw-?usp=sharing). The preprocess latent codes and pre-build databases are results directly from **Step 1-4** if you start everything from scratch. Once downloaded, unzip the DATABASES.zip and LATENT.ZIP  under `./FISH/DATA/` and `./FISH/` respectively.
+To reproduce the results in our paper, please download the checkpoints, preprocessed latent code and pre-build databases from the [link](https://drive.google.com/drive/folders/1HClR9ms737qx0d22ia0VQqPLuTIu1UgN?usp=sharing). The preprocess latent codes and pre-build databases are results directly from **Step 1-4** if you start everything from scratch. Once downloaded, unzip the DATABASES.zip and LATENT.ZIP  under `./FISH/DATA/` and `./FISH/` respectively.
 The folder structures should like the ones in **Step 4**. Run the command in **Step 5** and **Step 6** to reproduce the results in each site. 
 
 To reproduce the anatomic site retrieval, run
