@@ -50,7 +50,7 @@ DATA/
 
 ```
 #### Step 3: Mosaic generation
-The following script generates the mosaics for each whole slide image:
+The following script generates the mosaics for each whole slide image (Please download the checkpoint trash_lgrlbp.pkl from the link in the reproducibility section):
 ```
 python extract_mosaic.py --slide_data_path ./DATA/WSI/SITE/DIAGNOSIS/RESOLUTOIN --slide_patch_path ./DATA/PATCHES/SITE/DIAGNOSIS/RESOLUTION/patches/ --save_path ./DATA/MOSAICS/SITE/DIAGNOSIS/RESOLUTION
 ```
