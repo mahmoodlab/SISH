@@ -50,7 +50,7 @@ if __name__ == "__main__":
                                 ap_at_idx_tmp += 1
                         ap_at_idx_tmp /= (i_corr + 1)
                         ap_at_k += ap_at_idx_tmp
-                    ap_at_k /= len(corr_index)
+                    ap_at_k /= 5
                     avg_percision += ap_at_k
                 if len(ret_final) != 0:
                     hit_label = Counter(ret_final).most_common(1)[0][0]
