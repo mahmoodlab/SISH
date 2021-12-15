@@ -16,7 +16,7 @@ Fast and Scalable Image Search for Histology
 For more details, please refer to the [installtion guide](INSTALLATION.md).
 
 ## Usage
-The steps below show how to build FISH pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
+The steps below show how to build FAIRY pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
 ### Preprocessing
 #### Step 1: Slide preparation
 Make the `./DATA` folder, download whole slide images there, and then organize them into the following structure. Note that we ignore slides without specific resolution. 
@@ -71,7 +71,7 @@ DATA/
 ├── PATCHES
 └── WSI
 ```
-#### Step 4 FISH database construction
+#### Step 4 FAIRY database construction
 To buid the database for each anatomic site, run `build_index.py` as below
 ```
 python build_index.py --site SITE
@@ -122,8 +122,8 @@ Run the `eval.py` to get the performance results which will direclty print on th
 python eval.py --site SITE --result_path QUERY_RESULTS/SITE/results.pkl
 ```
 
-### Optional: FISH for patch retrieval
-If you would like to use FISH for patch retrieval task, please organize your data into the structure below
+### Optional: FAIRY for patch retrieval
+If you would like to use FAIRY for patch retrieval task, please organize your data into the structure below
 ```bash
 ./DATA_PATCH/
 ├── All
