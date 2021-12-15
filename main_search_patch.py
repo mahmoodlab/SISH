@@ -4,7 +4,7 @@ import os
 import h5py
 import pickle
 import pandas as pd
-from fish_database import HistoDatabase
+from database import HistoDatabase
 from tqdm import tqdm
 
 if __name__ == "__main__":

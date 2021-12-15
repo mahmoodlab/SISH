@@ -4,7 +4,7 @@ import os
 import h5py
 import pickle
 import glob
-from fish_database import HistoDatabase
+from database import HistoDatabase
 from tqdm import tqdm
 
 # Slides which are in poor quality
