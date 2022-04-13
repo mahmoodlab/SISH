@@ -1,10 +1,10 @@
-FAIRY
+SISH 
 ===========
 Fast and Scalable Image Search for Histology
 
 [[arXiv]](https://arxiv.org/abs/2107.13587)
 
-***TL;DR:** FAIRY is a histology whole slide image search pipeline that scales with O(1) and maintains constant search speed regardless of the size of the database. FAIRY uses self-supervised deep learning to encode meaningful representations from WSIs and a Van Emde Boas tree for fast search, followed by an uncertainty-based ranking algorithm to retrieve similar WSIs. We evaluated FAIRY on multiple tasks and datasets with over 22,000 patient cases spanning 56 disease subtypes. We additionally demonstrate that FAIRY can be used to assist with the diagnosis of rare cancer types where sufficient cases may not be available to train traditional deep models.*
+***TL;DR:** SISH is a histology whole slide image search pipeline that scales with O(1) and maintains constant search speed regardless of the size of the database. SISH uses self-supervised deep learning to encode meaningful representations from WSIs and a Van Emde Boas tree for fast search, followed by an uncertainty-based ranking algorithm to retrieve similar WSIs. We evaluated SISH on multiple tasks and datasets with over 22,000 patient cases spanning 56 disease subtypes. We additionally demonstrate that SISH can be used to assist with the diagnosis of rare cancer types where sufficient cases may not be available to train traditional deep models.*
 <p align="center">
     <img src="../assets/FISH_github_front_long.gif" alt="Teaser" width="600">
 </p>
@@ -16,7 +16,7 @@ Fast and Scalable Image Search for Histology
 For more details, please refer to the [installtion guide](INSTALLATION.md).
 
 ## Usage
-The steps below show how to build FAIRY pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
+The steps below show how to build SISH pipeline in your own dataset. To reproduce the results in our paper, please refer to the reproducibility section.
 ### Preprocessing
 #### Step 1: Slide preparation
 Make the `./DATA` folder, download whole slide images there, and then organize them into the following structure. Note that we ignore slides without specific resolution. 
@@ -71,7 +71,7 @@ DATA/
 ├── PATCHES
 └── WSI
 ```
-#### Step 4 FAIRY database construction
+#### Step 4 SISH database construction
 To buid the database for each anatomic site, run `build_index.py` as below
 ```
 python build_index.py --site SITE
@@ -122,8 +122,8 @@ Run the `eval.py` to get the performance results which will direclty print on th
 python eval.py --site SITE --result_path QUERY_RESULTS/SITE/results.pkl
 ```
 
-### Optional: FAIRY for patch retrieval
-If you would like to use FAIRY for patch retrieval task, please organize your data into the structure below
+### Optional: SISH for patch retrieval
+If you would like to use SISH for patch retrieval task, please organize your data into the structure below
 ```bash
 ./DATA_PATCH/
 ├── All
@@ -156,7 +156,7 @@ python eval_patch.py --result_path QUERY_RESULTS/PATCH/EXP_NAME/results.pkl
 ```
 
 ## Reproducibility
-To reproduce the results in our paper, please download the checkpoints, preprocessed latent code and pre-build databases from the [link](https://drive.google.com/drive/folders/1HClR9ms737qx0d22ia0VQqPLuTIu1UgN?usp=sharing). The preprocess latent codes and pre-build databases are results directly from **Step 1-4** if you start everything from scratch. Once downloaded, unzip the DATABASES.zip and LATENT.ZIP  under `./FAIRY` and `./FAIRY/DATA/` respectively.
+To reproduce the results in our paper, please download the checkpoints, preprocessed latent code and pre-build databases from the [link](https://drive.google.com/drive/folders/1HClR9ms737qx0d22ia0VQqPLuTIu1UgN?usp=sharing). The preprocess latent codes and pre-build databases are results directly from **Step 1-4** if you start everything from scratch. Once downloaded, unzip the DATABASES.zip and LATENT.ZIP  under `./SISH` and `./SISH/DATA/` respectively.
 The folder structures should like the ones in **Step 4**. Run the command in **Step 5** and **Step 6** to reproduce the results in each site. 
 
 To reproduce the anatomic site retrieval, run
