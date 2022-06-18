@@ -2,9 +2,11 @@ SISH
 ===========
 Self Supervised Deep Learning-based Fast and Scalable Image Search for Histology
 
+*Nature Biomedical Engineering (In press)*
+
 This study is currently under a press embargo, please address all questions to fmahmood@fas.harvard.edu
 
-Read Link | Journal Link | [[Preprint]](https://arxiv.org/abs/2107.13587) | Cite
+Read Link | Journal Link | [Preprint](https://arxiv.org/abs/2107.13587) | Cite
 
 ***TL;DR:** SISH is a histology whole slide image search pipeline that scales with O(1) and maintains constant search speed regardless of the size of the database. SISH uses self-supervised deep learning to encode meaningful representations from WSIs and a Van Emde Boas tree for fast search, followed by an uncertainty-based ranking algorithm to retrieve similar WSIs. We evaluated SISH on multiple tasks and datasets with over 22,000 patient cases spanning 56 disease subtypes. We additionally demonstrate that SISH can be used to assist with the diagnosis of rare cancer types where sufficient cases may not be available to train traditional deep models.*
 <p align="center">
