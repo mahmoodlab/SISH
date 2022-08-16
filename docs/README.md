@@ -1,6 +1,6 @@
 SISH 
 ===========
-Self Supervised Deep Learning-based Fast and Scalable Image Search for Histology
+Fast and scalable search of whole-slide images via self-supervised deep learning
 
 *Nature Biomedical Engineering (In press)*
 
