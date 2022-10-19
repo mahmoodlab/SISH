@@ -2,11 +2,9 @@ SISH
 ===========
 Fast and scalable search of whole-slide images via self-supervised deep learning
 
-*Nature Biomedical Engineering (In press)*
+*Nature Biomedical Engineering*
 
-This study is currently under a press embargo, please address all questions to fmahmood@fas.harvard.edu
-
-Read Link | Journal Link | [Preprint](https://arxiv.org/abs/2107.13587) | Cite
+[Read Link](https://t.co/nEd5wulzHh) | [Journal Link](https://www.nature.com/articles/s41551-022-00929-8) | [Preprint](https://arxiv.org/abs/2107.13587) | [Cite](#reference)
 
 ***TL;DR:** SISH is a histology whole slide image search pipeline that scales with O(1) and maintains constant search speed regardless of the size of the database. SISH uses self-supervised deep learning to encode meaningful representations from WSIs and a Van Emde Boas tree for fast search, followed by an uncertainty-based ranking algorithm to retrieve similar WSIs. We evaluated SISH on multiple tasks and datasets with over 22,000 patient cases spanning 56 disease subtypes. We additionally demonstrate that SISH can be used to assist with the diagnosis of rare cancer types where sufficient cases may not be available to train traditional deep models.*
 <p align="center">
@@ -171,5 +169,26 @@ and
 ```
 python eval.py --site organ --result_path QUERY_RESULTS/organ/results.pkl
 ```
-
 Note that the speed results could be different from paper if your CPU is not equivalent to ours (AMD368Ryzen Threadripper 3970X  32-Core Processor).
+
+
+## Funding
+This work was funded by NIH NIGMS [R35GM138216](https://reporter.nih.gov/search/sWDcU5IfAUCabqoThQ26GQ/project-details/10029418).
+
+## Reference
+If you find our work useful in your research or if you use parts of this code please consider citing our [paper](https://www.nature.com/articles/s41551-022-00929-8):
+
+Lu, M.Y., Williamson, D.F.K., Chen, T.Y. et al. Data-efficient and weakly supervised computational pathology on whole-slide images. Nat Biomed Eng 5, 555–570 (2021). https://doi.org/10.1038/s41551-020-00682-w
+
+```
+@article{lu2021data,
+  title={Data-efficient and weakly supervised computational pathology on whole-slide images},
+  author={Lu, Ming Y and Williamson, Drew FK and Chen, Tiffany Y and Chen, Richard J and Barbieri, Matteo and Mahmood, Faisal},
+  journal={Nature Biomedical Engineering},
+  volume={5},
+  number={6},
+  pages={555--570},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+```
