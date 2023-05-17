@@ -35,7 +35,7 @@ DATA
 #### Step 2: Segmentation and Patching
 We use the [CLAM toolbox](https://github.com/mahmoodlab/CLAM/blob/master/docs/README.md) to segment and patch whole slide images. Simply run:
 ```
-python create_patches_fp.py --source ./DATA/SITE/DIAGNOSIS/RESOLUTION/ --step_size STEP_SIZE --patch_size PATCH_SIZE --seg --patch --save_dir ./DATA/PATCHES/SITE/DIAGNOSIS/RESOLUTION
+python create_patches_fp.py --source ./DATA/WSI/SITE/DIAGNOSIS/RESOLUTION/ --step_size STEP_SIZE --patch_size PATCH_SIZE --seg --patch --save_dir ./DATA/PATCHES/SITE/DIAGNOSIS/RESOLUTION
 ```
 We set `PATCH_SIZE` and `STEP_SIZE` to 1024 for 20x slide and to 2048 for 40x slide. After segmentation and patching, the `DATA` directory will look like the following
 ```bash
