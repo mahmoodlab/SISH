@@ -178,17 +178,16 @@ This work was funded by NIH NIGMS [R35GM138216](https://reporter.nih.gov/search/
 ## Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our [paper](https://www.nature.com/articles/s41551-022-00929-8):
 
-Lu, M.Y., Williamson, D.F.K., Chen, T.Y. et al. Data-efficient and weakly supervised computational pathology on whole-slide images. Nat Biomed Eng 5, 555–570 (2021). https://doi.org/10.1038/s41551-020-00682-w
-
+Chen, C., Lu, M.Y., Williamson, D.F.K. et al. Fast and scalable search of whole-slide images via self-supervised deep learning. Nat. Biomed. Eng 6, 1420–1434 (2022) https://doi.org/10.1038/s41551-022-00929-8
 ```
-@article{lu2021data,
-  title={Data-efficient and weakly supervised computational pathology on whole-slide images},
-  author={Lu, Ming Y and Williamson, Drew FK and Chen, Tiffany Y and Chen, Richard J and Barbieri, Matteo and Mahmood, Faisal},
+@article{chen2022fast,
+  title={Fast and scalable search of whole-slide images via self-supervised deep learning},
+  author={Chen, Chengkuan and Lu, Ming Y and Williamson, Drew FK and Chen, Tiffany Y and Schaumberg, Andrew J and Mahmood, Faisal},
   journal={Nature Biomedical Engineering},
-  volume={5},
-  number={6},
-  pages={555--570},
-  year={2021},
-  publisher={Nature Publishing Group}
+  volume={6},
+  number={12},
+  pages={1420--1434},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
 }
 ```
